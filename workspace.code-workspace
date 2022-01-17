@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\new website\\kingsgangbot\\hts-cache"
+		},
+		{
+			"path": "..\\..\\..\\new website\\kingsgangbot\\static.cloudflareinsights.com"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "xenon.bot"
+	}
+}
