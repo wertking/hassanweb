@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from www.salwyrr.com/share/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Dec 2021 08:49:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <title>Salwyrr Share</title>
+        <link href="css/main17dd.css?version=7" rel="stylesheet">
+        <link href="css/share_panel17dd.css?version=7" rel="stylesheet">
+        <link href="css/share_id_panel17dd.css?version=7" rel="stylesheet">
+        <link href="css/share_method_panel17dd.css?version=7" rel="stylesheet">
+        <link href="css/footer17dd.css?version=7" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <link rel="manifest" href="manifest/application.json">
+
+        <link rel="icon" href="images/logo_mini.png">
+    </head>
+    <body class="bg-light">
+        <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+
+        <main>
+            <div id="share_method_panels">
+                <h1>Select the sharing method</h1>
+                <p>Start sharing your files between different devices</p>
+
+                <div>
+                    <a onclick="switch_local()">
+                        <h2><i class="fas fa-network-wired"></i> Local network</h2>
+                        <p>Share with people connected on the same Internet network</p>
+                    </a>
+
+                    <a onclick="switch_remote()">
+                        <h2><i class="fas fa-people-arrows"></i> Remote share</h2>
+                        <p>Share with people using a private sharing code</p>
+                    </a>
+                </div>
+            </div>
+
+            <div id="share_id_panels">
+                <h1>Remote share</h1>
+
+                <div>
+                    <a onclick="switch_random()">
+                        <h2><i class="fas fa-lock"></i> Generate a code</h2>
+                        <p>Generate a new code and send it to the people you want to share with</p>
+                    </a>
+
+                    <a>
+                        <h2><i class="fas fa-key"></i> Enter a code</h2>
+                        <div id="share_id_form">
+                            <input type="text" id="share_id" autocomplete="off" placeholder="Code..." required minlength="10" />
+                            <button onclick="switch_with_id()"><i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="share_panels">
+                <div id="selected_method_header">
+                    <h2 id="selected_method">Method</h2>
+
+                    <a onclick="switch_method()">
+                        <p>Change</p>
+                    </a>
+                </div>
+
+                <div id="send_panel">
+                    <h2>Send <i class="fas fa-cloud-upload-alt"></i></h2>
+                    <p>Limited to 50 MB</p>
+                    <form id="share_file" enctype="multipart/form-data" target="dummyframe" action="https://parta.salwyrr.com/send" method="POST">
+                        <input id="file" type="file" name="file" onchange="send_file()"/>
+                        <div id="upload"></div>
+                    </form>
+                </div>
+
+                <div id="receive_panel">
+                    <h2>Receive <i class="fas fa-cloud-download-alt"></i></h2>
+                    <div id="files"></div>
+                </div>
+            </div>
+
+            <footer>
+                <img src="images/logo_mini.png"  alt="Salwyrr Share logo"/>
+                <p>Salwyrr Share is our service allowing you to share your files from one device to other devices connected to the same internet network or using a private code. The devices must be on the website at the same time, Salwyrr Share does not offer any file storage, if you leave the site without downloading them they might no longer be displayed on the next connection.</p>
+            </footer>
+        </main>
+
+        <script src="../../kit.fontawesome.com/30e8053b62.js" crossorigin="anonymous"></script>
+        <script src="js/app.js"></script>
+        <script src="js/ids.html"></script>
+        <script src="js/send.html"></script>
+        <script src="js/receive.html"></script>
+        <script src="js/method.html"></script>
+    </body>
+
+<!-- Mirrored from www.salwyrr.com/share/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Dec 2021 08:50:02 GMT -->
+</html>

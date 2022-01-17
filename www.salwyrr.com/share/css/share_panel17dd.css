@@ -1,0 +1,131 @@
+#share_panels {
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    display: none;
+
+    flex-grow: 1;
+}
+
+#selected_method_header {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+#selected_method_header a {
+    color: white;
+
+    cursor: pointer;
+
+    background-color: #28afff;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+    transition: 250ms ease-out box-shadow;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    margin-left: 10px;
+    height: fit-content;
+}
+
+#selected_method_header a:hover {
+    background-color: #28c6ff;
+}
+
+#selected_method_header a:active {
+    background-color: #1b9bc9;
+}
+
+#selected_method_header a * {
+    padding: 0;
+    margin: 0;
+}
+
+#send_panel {
+    position: relative;
+    text-align: center;
+
+    width: 500px;
+    max-width: 100vw;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    padding: 40px;
+
+    border-radius: 30px;
+    border: 3px dashed #cdcdcd;
+
+    margin-bottom: 30px;
+}
+
+#send_panel h2 {
+    margin: 0;
+}
+
+#send_panel p {
+    margin: 0;
+}
+
+#receive_panel {
+    background-color: rgb(240, 240, 240);
+    border-top: 1px solid #cdcdcd;
+    text-align: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+#upload, #files {
+    width: calc(100% - 80px);
+    align-content: center;
+    max-height: 50vh !important;
+    overflow-y: auto;
+    padding: 40px;
+}
+
+#file {
+    width: 100%;
+    height: calc(100% - 120px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    text-align-last: center;
+    padding-top: 120px;
+}
+
+#files a:first-child {
+    border-top: 1px solid #d7d7d7;
+}
+
+#files a {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+#files a i {
+    margin-right: 10px;
+}
+
+#files a img {
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#upload {
+    margin-top: 40px;
+}

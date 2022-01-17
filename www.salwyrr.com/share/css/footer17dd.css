@@ -1,0 +1,17 @@
+footer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+
+    border-top: 1px solid #cdcdcd;
+}
+
+footer img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+footer p {
+    padding: 0;
+    margin: 0;
+}

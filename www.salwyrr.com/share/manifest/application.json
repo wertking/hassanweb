@@ -1,0 +1,13 @@
+{
+  "name": "Salwyrr Share",
+  "short_name": "Slw Share",
+  "start_url": "https://www.salwyrr.com/share/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Salwyrr Share application.",
+  "icons": [{
+    "src": "images/logo_mini.png",
+    "sizes": "102x102",
+    "type": "image/png"
+  }]
+}

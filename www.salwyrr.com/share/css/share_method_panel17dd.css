@@ -1,0 +1,72 @@
+#share_method_panels {
+    text-align: center;
+    padding: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#share_method_panels h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+#share_method_panels p {
+    margin-bottom: 50px;
+}
+
+#share_method_panels div {
+    display: flex;
+    justify-content: center;
+}
+
+#share_method_panels div a:first-child {
+    margin-right: 40px;
+}
+
+#share_method_panels div a {
+    width: 300px;
+    max-width: 80vw;
+
+    cursor: pointer;
+
+    background-color: #28afff;
+    border: 3px solid rgba(255, 255, 255, 0.15);
+
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+    transition: 250ms ease-out box-shadow;
+}
+
+#share_method_panels div a:hover {
+    background-color: #28c6ff;
+    box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.33);
+}
+
+#share_method_panels div a:active {
+    background-color: #1b9bc9;
+}
+
+#share_method_panels div a * {
+    margin: 0;
+    padding: 2px;
+    color: white;
+}
+
+@media (max-width: 740px) {
+
+    #share_method_panels div {
+        flex-direction: column;
+    }
+
+    #share_method_panels div a:first-child {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+}
